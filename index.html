@@ -15,9 +15,9 @@ Research Educator:
 Timothy Riedel
 triedel@utexas.edu
  
-Brief Description of Goal of Code: To tally the symtpoms of a UTI vs. chalmydia and calculate the probablity of each.
+Brief Description of Goal of Code: To tally the symptoms of a UTI vs. chalmydia and calculate the probablity of having each.
  
-Known Issues: The results page and probability calculations.
+Known Issues: None
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -42,13 +42,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function UTIAdd(){ 
             UTI_count = UTI_count + 1;
-		//alert(UTI_count);
+		//alert(UTI_count); did not want alert
 //This fuction adds 1 to UTI value
 } 
 	function chlamydiaAdd(){ // this function adds 1 to cold value
       
             chlamydia_count = chlamydia_count + 1;
-		//alert(chlamydia_count);
+		//alert(chlamydia_count); did not want alert
+//This function adds 1 to chlamydia value//
  }
 function resultPercentage() {
 	var UTIPercentage = UTI_count /6 *100; // multiply by 100 for probability
@@ -92,16 +93,17 @@ function resultPercentage() {
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>UTI or Chlamydia?</h1>
+	<h1>UTI or Chlamydia?</h1> <!--Header for first page-->
 </div>
 	
-<div id="content" class="w3-container">
+<div id="content" class="w3-container"> <!--Indroduction of what the app does-->
 	<p>Are you unsure if you're experiencing a UTI or an STD? Answer a few short questions to find out if you need to get tested!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
-	
-	<img src="https://z412l3kad2440am0q34eeh0t-wpengine.netdna-ssl.com/wp-content/uploads/2019/07/life-renew-asking-doctor-questions.jpeg" alt="Girl talking to doctor" width="600" height="300">
-	<style>
+	<!--I inserted an image on the first page  of a patient consulting her docotor-->
+	<img src="https://z412l3kad2440am0q34eeh0t-wpengine.netdna-ssl.com/wp-content/uploads/2019/07/life-renew-asking-doctor-questions.jpeg" alt="Girl talking to doctor" width="600" height="400">
+	<!-- This function resizes the image to fit the screen it is opened on-->
+<style>
        	img, object{
             	max-height:90%;
         		max-width:90%;
@@ -117,7 +119,7 @@ function resultPercentage() {
 		<h1>Question 1?</h1> 
 		
 	</div>
-	        <p>Are you experiencing foul smelling urine?</p> <!--Added header-->
+	        <p>    Are you experiencing foul smelling urine?</p> <!--Added header-->
 		<a href="#two" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 1-->
 		<a href="#two" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 1 -->
 	</div>
@@ -131,7 +133,7 @@ function resultPercentage() {
 		<h1>Question 2</h1>
 		
 	</div>
-	        <p>Do you have any blisters in the gential area?</p> <!-- added question -->  
+	        <p>    Do you have any blisters in the gential area?</p> <!-- added question -->  
 		<a href="#three" onclick="chlamydiaAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 2, also added cold que -->
 		<a href="#three" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 2, also added allergy que -->
 	</div>
@@ -146,13 +148,13 @@ function resultPercentage() {
 		<h1>Question 3</h1>
 		
 	</div>
-	        <p>Do you have a fever?</p> <!-- added question --> 
+	        <p>     Do you have a fever?</p> <!-- added question --> 
 		<a href="#four" onclick="chlamydiaAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 3, also added cold que; fixed que to move to page 3 -->
 		<a href="#four" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 3, also added allergy que; fixed que to move to page 3 --> 
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p></p> <!-- deleted "question 3 here --> 
+	<p></p> 
 	</div>
 </div>
 
@@ -160,7 +162,7 @@ function resultPercentage() {
 	<div id="header" class="w3-container w3-flat-carrot"> <!--Produces header for question 3-->
 		<h1>Question 4</h1>
 </div>
-	        <p>Is your urine dark and cloudy?</p> <!-- added question --> 
+	        <p>     Is your urine dark and cloudy?</p> <!-- added question --> 
 		<a href="#five" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 4, -->
 		<a href="#five" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 4 -->
 	</div>
@@ -175,7 +177,7 @@ function resultPercentage() {
 		
 		<h1>Question 5</h1>
 </div>
-	        <p>Do you have an increased urgency to urinate?</p> <!-- added question --> 
+	        <p>     Do you have an increased urgency to urinate?</p> <!-- added question --> 
 		<a href="#six" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 5 -->
 		<a href="#six" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 5-->
 	</div>
@@ -189,7 +191,7 @@ function resultPercentage() {
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
 		<h1>Question 6</h1>
 </div>
-	        <p>Are you experiencing pain during intercourse?</p> <!-- added question --> 
+	        <p>     Are you experiencing pain during intercourse?</p> <!-- added question --> 
 		<a href="#seven"  onclick="chlamydiaAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 6-->
 		<a href="#seven" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 6-->
 	</div>
@@ -204,7 +206,7 @@ function resultPercentage() {
 		
 	</div>
 	      
-		<a href="#eight" onclick="resultPercentage();" class="w3-btn w3-black"> Click here for results. </a> <!-- added results button-->
+		<a href="#eight" onclick="resultPercentage();" class="w3-btn w3-black">   Click here for results.   </a> <!-- added results button-->
 		
 	</div>
 	
