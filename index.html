@@ -85,11 +85,11 @@ function resultPercentage() {
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>UTI or Chlamydia?</h1>
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+	<p>Are you unsure if you're experiencing a UTI or an STD? Answer a few short questions to find out if you need to get tested!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
@@ -99,12 +99,12 @@ function resultPercentage() {
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot"> <!--Produces question 1 header -->
-		<h1>Question 1</h1> 
+		<h1>Are you experiencing foul smelling urine?</h1> 
 		
 	</div>
-	        <p>Are your eyes watery or itchy?</p> <!--Added header-->
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 1-->
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 1 -->
+	        <p>?</p> <!--Added header-->
+		<a href="#two" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 1-->
+		<a href="#two" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 1 -->
 	</div>
 	
     	<div id="content" class="w3-container"> 
@@ -116,9 +116,9 @@ function resultPercentage() {
 		<h1>Question 2</h1>
 		
 	</div>
-	        <p>Do you have a fever?</p> <!-- added question -->  
-		<a href="#three" onclick="coldAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 2, also added cold que -->
-		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 2, also added allergy que -->
+	        <p>Do you have any blisters in the gential area?</p> <!-- added question -->  
+		<a href="#three" onclick="chlamydiaAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 2, also added cold que -->
+		<a href="#three" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 2, also added allergy que -->
 	</div>
 	
 	<div id="content" class="w3-container">
@@ -131,9 +131,9 @@ function resultPercentage() {
 		<h1>Question 3</h1>
 		
 	</div>
-	        <p>Do you have a sore throat?</p> <!-- added question --> 
-		<a href="#four" onclick="coldAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 3, also added cold que; fixed que to move to page 3 -->
-		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 3, also added allergy que; fixed que to move to page 3 --> 
+	        <p>Do you have a fever?</p> <!-- added question --> 
+		<a href="#four" onclick="chlamydiaAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 3, also added cold que; fixed que to move to page 3 -->
+		<a href="#four" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 3, also added allergy que; fixed que to move to page 3 --> 
 	</div>
 	
 	<div id="content" class="w3-container">
@@ -145,9 +145,9 @@ function resultPercentage() {
 	<div id="header" class="w3-container w3-flat-carrot"> <!--Produces header for question 3-->
 		<h1>Question 4</h1>
 </div>
-	        <p>Are your symptoms seasonal or chronic?</p> <!-- added question --> 
-		<a href="#five" onclick="allergyAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 4, -->
-		<a href="#five" onclick="coldAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 4 -->
+	        <p>Is your urine dark and cloudy?</p> <!-- added question --> 
+		<a href="#five" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 4, -->
+		<a href="#five" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 4 -->
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -160,9 +160,9 @@ function resultPercentage() {
 		
 		<h1>Question 5</h1>
 </div>
-	        <p>Have your symptoms lasted for more than 10 days?</p> <!-- added question --> 
-		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 5 -->
-		<a href="#six" onclick="coldAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 5-->
+	        <p>Do you have an increased urgency to urinate?</p> <!-- added question --> 
+		<a href="#six" onclick="UTIAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 5 -->
+		<a href="#six" onclick="chlamydiaAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 5-->
 	</div>
 	
     	<div id="content" class="w3-container">
@@ -174,9 +174,9 @@ function resultPercentage() {
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
 		<h1>Question 6</h1>
 </div>
-	        <p>Do you feed achy?</p> <!-- added question --> 
-		<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 6-->
-		<a href="#seven" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 6-->
+	        <p>Are you experiencing pain during intercourse?</p> <!-- added question --> 
+		<a href="#seven"  onclick="chlamydiaAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 6-->
+		<a href="#seven" onclick="UTIAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 6-->
 	</div>
 	
     	<div id="content" class="w3-container">
