@@ -6,7 +6,6 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Tim Riedel
 Sophia Broadhurst
  
 Further Information:
@@ -16,7 +15,7 @@ Research Educator:
 Timothy Riedel
 triedel@utexas.edu
  
-Brief Description of Goal of Code: To count the symtpoms of a cold or allergies and calculate the probablity of them.
+Brief Description of Goal of Code: To tally the symtpoms of a UTI vs. chalmydia and calculate the probablity of each.
  
 Known Issues: The results page and probability calculations.
 https://www.w3schools.com/w3css/default.asp
@@ -32,27 +31,27 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0; //Established variables
-        var cold_count = 0;
+        var UTI_count = 0; //Established variables
+        var chlamydia_count = 0;
 
 
-        function allergyAdd(){ 
-            allergy_count = allergy_count + 1;
-		//alert(allergy_count);
-//This fuction adds 1 to allergy value
+        function UTIAdd(){ 
+            UTI_count = UTI_count + 1;
+		//alert(UTI_count);
+//This fuction adds 1 to UTI value
 } 
-	function coldAdd(){ // this function adds 1 to cold value
+	function chlamydiaAdd(){ // this function adds 1 to cold value
       
-            cold_count = cold_count + 1;
-		//alert(cold_count);
+            chlamydia_count = chlyamydia_count + 1;
+		//alert(chlamydia_count);
  }
 function resultPercentage() {
-	var allergyPercentage = allergy_count /6 *100; // multiply by 100 for probability
-	//alert(allergyPercentage); // alert box for allergy
-	var coldPercentage = cold_count /6 *100; // multiply by 100 for probability
-	//alert(coldPercentage); // alert box for cold
+	var UTIPercentage = UTI_count /6 *100; // multiply by 100 for probability
+	//alert(UTIPercentage); // alert box for UTI
+	var chlamydiaPercentage = chlamydia_count /6 *100; // multiply by 100 for probability
+	//alert(chlamydiaPercentage); // alert box for chlamydia
 	var resultText = document.getElementById("results");
-	resultText.innerHTML = "Percent it's likely allergies =" + allergy_count /6 *100 + "<br> Percent it's likely a cold =" + cold_count /6 *100 ; // added () re did change divided by 6 multiplied by 100 added percent; changed it to percent likel; changed it to cold_count and allergy_count to signal it
+	resultText.innerHTML = "Percent it is a UTI =" + UTI_count /6 *100 + "<br> Percent it is a chlamydia =" + chlamydia_count /6 *100 ; 
 	//Function shows results of probabilities
 	
 
